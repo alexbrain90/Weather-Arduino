@@ -68,14 +68,14 @@ void showData() {
   lcd.print(T0,1);
   lcd.print(" ");
   if (T2 != -100) {
-    if ((T0-T2) < 10)
+    if ((T0-T2) < 10 && (T0-T2) > -10)
       lcd.print(" ");
     if ((T0-T2) >= 0)
       lcd.print("+");
     lcd.print((T0-T2),1);
     lcd.print(" ");
     if (T7 != -100) {
-      if ((T0-T7) < 10)
+      if ((T0-T7) < 10 && (T0-T7) > -10)
         lcd.print(" ");
       if ((T0-T7) >= 0)
         lcd.print("+");
@@ -93,18 +93,18 @@ void showData() {
   lcd.print(H0,0);
   lcd.print("  ");
   if (H2 != -100) {
-    if ((H0-H2) < 100)
+    if ((H0-H2) < 100 && (H0-H2) > -100)
       lcd.print(" ");
-    if ((H0-H2) < 10)
+    if ((H0-H2) < 10 && (H0-H2) > -10)
       lcd.print(" ");
     if ((H0-H2) >= 0)
       lcd.print("+");
     lcd.print((H0-H2),0);
     lcd.print("  ");
     if (H7 != -100) {
-      if ((H0-H7) < 100)
+      if ((H0-H7) < 100 && (H0-H7) > -100)
         lcd.print(" ");
-      if ((H0-H7) < 10)
+      if ((H0-H7) < 10 && (H0-H7) > -10)
         lcd.print(" ");
       if ((H0-H7) >= 0)
         lcd.print("+");
@@ -118,14 +118,14 @@ void showData() {
   lcd.print(P0,1);
   lcd.print(" ");
   if (P2 != -100) {
-    if ((P0-P2) < 10)
+    if ((P0-P2) < 10 && (P0-P2) > -10)
       lcd.print(" ");
     if ((P0-P2) >= 0)
       lcd.print("+");
     lcd.print((P0-P2),1);
     lcd.print(" ");
     if (P7 != -100) {
-      if ((P0-P7) < 10)
+      if ((P0-P7) < 10 && (P0-P7) > -10)
         lcd.print(" ");
       if ((P0-P7) >= 0)
         lcd.print("+");
@@ -142,17 +142,17 @@ void showData() {
     lcd.print(" ");
   lcd.print(G0,1);
   if (G2 != -100) {
-    if ((G0-G2) < 100)
+    if ((G0-G2) < 100 && (G0-G2) > -100)
       lcd.print(" ");
-    if ((G0-G2) < 10)
+    if ((G0-G2) < 10 && (G0-G2) > -10)
       lcd.print(" ");
     if ((G0-G2) >= 0)
       lcd.print("+");
     lcd.print((G0-G2),1);
     if (G7 != -100) {
-      if ((G0-G7) < 100)
+      if ((G0-G7) < 100 && (G0-G7) > -100)
         lcd.print(" ");
-      if ((G0-G7) < 10)
+      if ((G0-G7) < 10 && (G0-G7) > -10)
         lcd.print(" ");
       if ((G0-G7) >= 0)
         lcd.print("+");
